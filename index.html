@@ -71,12 +71,7 @@
 <body>
 
 
-    <div id="error-screen" class="error-screen hidden">
-        <div>
-            <p>جربت تتهكر قبل كده؟</p>
-            <button id="close-button">Close</button>
-        </div>
-    </div>
+    
     
    
 
@@ -382,22 +377,7 @@ BODY {
 
 
   
-    function showErrorScreen() {
-            document.getElementById('error-screen').classList.remove('hidden');
-        }
 
-        function closeErrorScreen() {
-            document.getElementById('error-screen').classList.add('hidden');
-            setTimeout(showErrorScreen, 2000); // Re-show the error screen after 1 second
-        }
-
-        document.getElementById('close-button').addEventListener('click', closeErrorScreen);
-
-        // Initial display of the error screen
-        window.addEventListener('load', function() {
-            setTimeout(showErrorScreen, 2000);
-    }   );
-  
 
 </script>
 
