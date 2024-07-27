@@ -405,25 +405,23 @@ BODY {
     var errorScreen = document.getElementById('error-screen');
     var closeButton = document.getElementById('close-button');
 
-    // Function to show the error screen
-    function showErrorScreen() {
-        errorScreen.classList.remove('hidden');
-    }
+        // Function to show the error screen
+        function showErrorScreen() {
+            errorScreen.classList.remove('hidden');
+        }
 
-    // Function to hide the error screen
-    function hideErrorScreen() {
-        errorScreen.classList.add('hidden');
-    }
+        // Function to hide the error screen
+        function hideErrorScreen() {
+            errorScreen.classList.add('hidden');
+        }
 
-    // Show error screen after 2 seconds
-    setTimeout(showErrorScreen, 2000);
+        // Show error screen after 2 seconds
+        setTimeout(showErrorScreen, 2000);
 
-    // Hide error screen after 5 seconds
-    setTimeout(hideErrorScreen, 7000);
-
-    // Hide error screen when the close button is clicked
-    closeButton.addEventListener('click', hideErrorScreen);
-});
+        // Hide error screen after 5 seconds
+        setTimeout(hideErrorScreen, 7000);
+    }   
+  
 
 </script>
 
