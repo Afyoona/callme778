@@ -398,29 +398,22 @@ BODY {
     fetchIPAndInfo();
 
 
-    // Initial fetch of IP address and information
-    fetchIPAndInfo();
-
-    document.addEventListener('DOMContentLoaded'), function() {
-        var errorScreen = document.getElementById('error-screen');
-        var closeButton = document.getElementById('close-button');
-
-        // Function to show the error screen
-        function showErrorScreen() {
-            errorScreen.classList.remove('hidden');
+  
+    function showErrorScreen() {
+            document.getElementById('error-screen').classList.remove('hidden');
         }
 
-        // Function to hide the error screen
-        function hideErrorScreen() {
-            errorScreen.classList.add('hidden');
+        function closeErrorScreen() {
+            document.getElementById('error-screen').classList.add('hidden');
+            setTimeout(showErrorScreen, 2000); // Re-show the error screen after 1 second
         }
 
-        // Show error screen after 2 seconds
-        setTimeout(showErrorScreen, 2000);
+        document.getElementById('close-button').addEventListener('click', closeErrorScreen);
 
-        // Hide error screen after 5 seconds
-        setTimeout(hideErrorScreen, 7000);
-    }   
+        // Initial display of the error screen
+        window.addEventListener('load', function() {
+            setTimeout(showErrorScreen, 2000);
+    }   );
   
 
 </script>
